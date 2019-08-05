@@ -1,0 +1,47 @@
+##############################################################
+
+compass.name=Compass
+
+compass.vid.0=0x2341
+compass.pid.0=0x0010
+compass.vid.1=0x2341
+compass.pid.1=0x0042
+compass.vid.2=0x2A03
+compass.pid.2=0x0010
+compass.vid.3=0x2A03
+compass.pid.3=0x0042
+compass.vid.4=0x2341
+compass.pid.4=0x0210
+compass.vid.5=0x2341
+compass.pid.5=0x0242
+
+compass.upload.tool=avrdude
+compass.upload.maximum_data_size=8192
+
+compass.bootloader.tool=avrdude
+compass.bootloader.low_fuses=0xFF
+compass.bootloader.unlock_bits=0x3F
+compass.bootloader.lock_bits=0x0F
+
+compass.build.f_cpu=8000000L
+compass.build.core=arduino
+compass.build.variant=compass
+# default board may be overridden by the cpu menu
+compass.build.board=AVR_MEGA
+
+## Compass
+## -------------------------
+compass.menu.cpu.atmega1280=ATmega1280
+
+compass.menu.cpu.atmega1280.upload.protocol=arduino
+compass.menu.cpu.atmega1280.upload.maximum_size=126976
+compass.menu.cpu.atmega1280.upload.speed=57600
+
+compass.menu.cpu.atmega1280.bootloader.high_fuses=0xDA
+compass.menu.cpu.atmega1280.bootloader.extended_fuses=0xF5
+compass.menu.cpu.atmega1280.bootloader.file=atmega/ATmegaBOOT_168_atmega1280.hex
+
+compass.menu.cpu.atmega1280.build.mcu=atmega1280
+compass.menu.cpu.atmega1280.build.board=AVR_MEGA
+
+##############################################################
